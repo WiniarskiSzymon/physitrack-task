@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@types/mocha": "^9.0.0",
+    "@wdio/appium-service": "^7.19.0",
+    "@wdio/cli": "^7.19.0",
+    "@wdio/dot-reporter": "^7.19.0",
+    "@wdio/mocha-framework": "^7.19.0",
+    "@wdio/types": "^7.19.0"
+  },
+  "scripts": {
+    "tests": "wdio ./configs/wdio.web.conf.ts"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "@types/webdriverio": "^5.0.0",
+    "chromedriver": "^101.0.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4",
+    "wdio-chromedriver-service": "^7.3.2"
+  }
+}
