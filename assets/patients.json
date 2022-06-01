@@ -1,0 +1,7 @@
+[{"firstName":"Angela",
+    "lastName":"Demo-patient",
+    "name": "Angela Demo-patient",
+    "plan":{
+        "planName":"Core & pelvis & Hips program",
+        "excercises":["\"Bird dog\" Core/abdominal stabilization; 01"]
+    }}]

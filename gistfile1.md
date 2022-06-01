@@ -28,3 +28,8 @@ You are testing a demo account flow
 - Test must work on first run
     
 If you have any questions, we are here to help.
+
+
+To run Tests:
+npm install
+npm run tests
