@@ -1,5 +1,5 @@
 
-class ProgramExcerciseElement {
+class ProgramExerciseElement {
   private element:  WebdriverIO.Element;
 
   constructor(element: WebdriverIO.Element) {
@@ -12,4 +12,4 @@ class ProgramExcerciseElement {
   }
 }
 
-export default ProgramExcerciseElement
+export default ProgramExerciseElement

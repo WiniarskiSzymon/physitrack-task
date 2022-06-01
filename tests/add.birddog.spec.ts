@@ -2,7 +2,7 @@ import HomePgae from "../pages/home.pgae";
 import LoginPage from "../pages/login.page";
 import SelectServerModal from "../pages/select.server.modal";
 import SelectServerPage from "../pages/select.server.page";
-import DemoExcercisesPage from "../pages/excercieses/excercises.demo.page";
+import DemoExercisesPage from "../pages/exercieses/exercises.demo.page";
 import ProgramEditorPage from "../pages/program/program.editor.page";
 import AssignProgramPage from "../pages/program/assign.program.page";
 import PatientProgramSettingsPage from "../pages/program/patient.program.settings.page";
@@ -12,7 +12,7 @@ import PatientsPage from "../pages/patients.page";
 const patient = patients[0];
 const messages = messagesJson;
 
-describe("Adding excercises", async function () {
+describe("Adding exercises", async function () {
   it("Should add dogbird to plan", async () => {
     await HomePgae.pressLoginButton();
     await SelectServerModal.selectCountry("USA");
@@ -20,8 +20,8 @@ describe("Adding excercises", async function () {
     await SelectServerPage.pressContinueButton();
     await LoginPage.goBackToDemo();
 
-    await DemoExcercisesPage.addExcerciseToBasket(patient.plan.excercises[0]);
-    await DemoExcercisesPage.editProgram();
+    await DemoExercisesPage.addExerciseToBasket(patient.plan.excercises[0]);
+    await DemoExercisesPage.editProgram();
     await ProgramEditorPage.openAssignProgramModal();
 
     await AssignProgramPage.assignPlanToPatientByNameAndSurname(
@@ -38,7 +38,7 @@ describe("Adding excercises", async function () {
     expect(programEditorAssignedPatient).toEqual(patient.name);
     await ProgramEditorPage.close();
 
-    await DemoExcercisesPage.navigationBar.navigateToPatientsPage();
+    await DemoExercisesPage.navigationBar.navigateToPatientsPage();
     let patients = await PatientsPage.getAllPatientsNames();
     let angelaPlan = await PatientsPage.getPatientPlan(patient.name);
     expect(patients).toEqual([patient.name]);

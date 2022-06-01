@@ -1,6 +1,6 @@
 import { ChainablePromiseElement } from 'webdriverio';
 
-class ExcerciseElement {
+class ExerciseElement {
   private element: WebdriverIO.Element;
 
   constructor(element: WebdriverIO.Element) {
@@ -20,4 +20,4 @@ class ExcerciseElement {
   }
 }
 
-export default ExcerciseElement
+export default ExerciseElement

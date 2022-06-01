@@ -23,7 +23,7 @@
     "tests/**/*.ts",
     "utils/*.ts",
     "configs/*.ts"
-, "pages/excercieses/excercises.demo.page.ts"  ],
+, "pages/exercieses/exercises.demo.page.ts"  ],
   "exclude": [
     "node_modules"
   ],

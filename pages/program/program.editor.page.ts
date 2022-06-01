@@ -1,4 +1,4 @@
-import ProgramExcerciseElement from "./program.excercise.element";
+import ProgramExcerciseElement from "./program.exercise.element";
 import { ChainablePromiseElement } from 'webdriverio';
 
 class ProgramEditorPage{

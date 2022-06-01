@@ -1,7 +1,7 @@
-import ExcerciseElement from './excercise.element'
+import ExcerciseElement from './exercise.element'
 import BasePageWithNavigation from "../base.navigation.page"
 
-class DemoExcercisesPage extends BasePageWithNavigation{
+class DemoExercisesPage extends BasePageWithNavigation{
 
     get excercisesList(): Promise<ExcerciseElement[]> {
         return  $('div[id*="ExercisesApp"]')
@@ -15,7 +15,7 @@ class DemoExcercisesPage extends BasePageWithNavigation{
     }
 
 
-    async addExcerciseToBasket(excerciseName: string) : Promise<void>{
+    async addExerciseToBasket(excerciseName: string) : Promise<void>{
         await browser.waitForLoadingToFinish()
         let excercies = await this.excercisesList
          for(let excercise of excercies){
@@ -33,4 +33,4 @@ class DemoExcercisesPage extends BasePageWithNavigation{
     }
 }
 
-export default new DemoExcercisesPage()
+export default new DemoExercisesPage()

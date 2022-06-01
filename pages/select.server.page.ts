@@ -1,6 +1,7 @@
 import { ChainablePromiseElement, ChainablePromiseArray } from 'webdriverio';
 
-type CountryValues = "it" | "nl" | "us"
+type CountryValues =  "au"|"nl"|"ca"|"br"|"fr"|"fi"|"id"|"de"|"it"|"ie"|"pl"|"nz"|"se"|"es"|"us"
+
 class SelectServerModal{
 
     get countriesList():ChainablePromiseArray<WebdriverIO.ElementArray>{
